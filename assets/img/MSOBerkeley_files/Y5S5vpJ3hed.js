@@ -1,0 +1,5 @@
+/*!CK:1553555967!*//*1450126840,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["Q9w2e"]); }
+
+__d('P2PPendingPushFailJewelBanner.react',['P2PJewelBanner.react','P2PTransferParam','XP2PTransactionDetailController','React','fbt'],function a(b,c,d,e,f,g,h,i,j,k,l){'use strict';if(c.__markCompiled)c.__markCompiled();var m=k.PropTypes,n=k.createClass({displayName:'P2PPendingPushFailJewelBanner',propTypes:{transfer:m.object.isRequired},getActionText:function(){return l._("Update Card");},render:function(){var o=this.props.transfer;return (k.createElement(h,{bodyText:l._("It looks like your card is expired or invalid. Please update it to get {currency}{amount} from {sender_name}.",[l.param('currency',o.currency),l.param('amount',o.amount),l.param('sender_name',o.sender.name)]),primaryActionConfig:{text:l._("Update"),uri:j.getURIBuilder().setString('id',o[i.TRANSFER_ID]).getURI()},titleText:l._("Update Your Card")}));}});f.exports=n;},null);

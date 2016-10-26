@@ -1,0 +1,5 @@
+/*!CK:2407395552!*//*1449793467,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["vq\/0F"]); }
+
+__d('MercuryJewelCountControl',['Arbiter','MercuryDispatcher','MercuryThreadInformer','MercuryUnseenState','UserActivity'],function a(b,c,d,e,f,g,h,i,j,k,l){if(c.__markCompiled)c.__markCompiled();function m(n){'use strict';var o=i.get(),p=j.get();this.$MercuryJewelCountControl1=k.get();this.render();o.subscribe('model-update-completed',(function(q,r){this.$MercuryJewelCountControl2(false);}).bind(this));p.subscribe('unseen-updated',(function(){return this.render();}).bind(this));this.$MercuryJewelCountControl3=n;this.$MercuryJewelCountControl3.subscribe('marked-seen',(function(){this.$MercuryJewelCountControl2(true);}).bind(this));}m.prototype.render=function(){'use strict';h.inform('jewel/count-updated',{jewel:'mercurymessages',count:this.$MercuryJewelCountControl1.getUnseenCount()},h.BEHAVIOR_STATE);};m.prototype.$MercuryJewelCountControl2=function(n){'use strict';if(n||this.$MercuryJewelCountControl3.isOpen()&&l.isActive())this.$MercuryJewelCountControl1.markAsSeen();};m.constructStores=function(){'use strict';k.get();};f.exports=m;},null);

@@ -1,0 +1,5 @@
+/*!CK:3274031803!*//*1450126841,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["PBbHr"]); }
+
+__d('P2PPendingRecipientVerificationJewelBanner.react',['P2PJewelBanner.react','P2PTransferParam','P2PVerificationFlowHelper','React','fbt'],function a(b,c,d,e,f,g,h,i,j,k,l){'use strict';if(c.__markCompiled)c.__markCompiled();var m=k.PropTypes,n=k.createClass({displayName:'P2PPendingRecipientVerificationJewelBanner',propTypes:{transfer:m.object.isRequired},handleClick:function(){j.startVerificationFlow(this.props.transfer[i.TRANSFER_ID],false);},render:function(){return (k.createElement(h,{bodyText:l._("To accept the money {sender_name} sent you, please confirm your information.",[l.param('sender_name',this.props.transfer.sender.name)]),primaryActionConfig:{onClick:this.handleClick,text:l._("Confirm Info")},titleText:l._("Please Confirm Your Info")}));}});f.exports=n;},null);

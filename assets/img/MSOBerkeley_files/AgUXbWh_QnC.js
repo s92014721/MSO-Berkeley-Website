@@ -1,0 +1,5 @@
+/*!CK:2850837008!*//*1450528020,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["WZX7F"]); }
+
+__d('EmojiLikeUtils',['EmoticonsList','EmojiLikeConstants','MercuryConfig','SupportedEmoji','Utf16'],function a(b,c,d,e,f,g,h,i,j,k,l){'use strict';if(c.__markCompiled)c.__markCompiled();var m,n=i.size,o='/images/emoji/unicode/emoji_',p=(m={},m[n.SMALL]='_16',m[n.MEDIUM]='_16-2x',m[n.LARGE]='_64',m),q='.png',r=new RegExp('([\u203C\u2049\u2100-\u21FF\u2300-\u27FF'+'\u2900-\u29FF\u2B00-\u2BFF\u3000-\u30FF\u3200-\u32FF]|'+'\uD83C[\uDC00-\uDFFF]|\uD83D[\uDC00-\uDEFF])([\uFE00-\uFE0F])?'),s=function(u){if(!j.BubblelessEmojiRenderingGK)return false;u=u||'';var v=u.replace(h.noncapturingRegexp,'');while(h.noncapturingRegexp.test(v))v=v.replace(h.noncapturingRegexp,'');if(v=='')return true;while(v.length>0){v=v.trim();var w=r.exec(v);if(!w||!w.length)return false;var x=w[1],y=l.decode(x),z=k.emoji[y];if(!z)return false;v=v.replace(r,'');}return v=='';};function t(u,v){return (o+l.decode(u).toString(16)+p[v]+q);}f.exports={isEmojiOnly:s,getURI:t};},null);

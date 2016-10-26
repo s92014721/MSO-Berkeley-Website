@@ -1,0 +1,5 @@
+/*!CK:3948297005!*//*1450300070,*/
+
+if (self.CavalryLogger) { CavalryLogger.start_js(["MCcEQ"]); }
+
+__d('MessagesJewelInlineThumbnail.react',['MercuryAttachmentType','React','cx'],function a(b,c,d,e,f,g,h,i,j){'use strict';if(c.__markCompiled)c.__markCompiled();var k=i.PropTypes,l=i.createClass({displayName:'MessagesJewelInlineThumbnail',propTypes:{thread:k.object.isRequired},render:function(){var m=this._getPhotoAttachments();if(m.length===0)return i.createElement('span',null);var n=m[0].thumbnail_url;if(!n)return i.createElement('span',null);var o=i.createElement('span',{className:"_56hv"},i.createElement('i',{style:{backgroundImage:'url('+n+')'}}));if(m.length>1)o=i.createElement('span',null,i.createElement('span',{className:"_56hy"}),o);return o;},_getPhotoAttachments:function(){var m=this.props.thread;if(!m.snippet_attachments)return [];return m.snippet_attachments.filter(function(n){return n.attach_type===h.PHOTO;});}});f.exports=l;},null);
